@@ -8,6 +8,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    #video-table {
+      margin-top: 50px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    #video-table th, #video-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid black;
+    }
+    #video-table th {
+      background-color: #d9edf7;
+    }
+    #video-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,6 +47,7 @@
       </ul>
     </div>
   </nav>
+
   <div class="container">
     <h1>Beach Volleyball Live Stream Finder 1.0</h1>
     <hr>
@@ -36,29 +55,51 @@
       <div class="col-lg-8 col-md-8 col-sm-12">
         <h2>Live Streams</h2>
         <div class="video-container">
-          
           <iframe width="500" height="500"  src="https://app.balltime.com/video/ebdb6e7a-e3f1-3f7b-b692-d0c1936a0394" frameborder="0" allowfullscreen></iframe>
         </div>
-      </div>
-  <div class="container">
-    <h1>Beach Volleyball Live Stream Finder 1.0</h1>
-    <hr>
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-12">
-        <h2>Live Streams</h2>
-        <div class="video-container">
-          <iframe width="500" height="500"  src="https://www.youtube.com/embed/xLna7dReBvI" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <hr>
-        <h3>Other Live Streams:</h3>
-        <ul>
-          <li><a href="https://www.fivb.org/en/beachvolleyball/beachworldtour/2022/event?id=2032226">FIVB World Tour - Cancun</a></li>
-          <li><a href="https://www.fivb.org/en/beachvolleyball/beachworldtour/2022/event?id=2032233">FIVB World Tour - Singapore</a></li>
-          <li><a href="https://www.volleyballworld.tv/">Volleyball World TV</a></li>
-        </ul>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12">
         <h2>Add Live Stream</h2>
         <form>
           <div class="form-group">
-            <label for="stream-name">Stream Name</
+            <label for="stream-name">Stream Name</label>
+            <input type="text" class="form-control" id="stream-name" placeholder="Enter Stream Name">
+          </div>
+          <div class="form-group">
+            <label for="stream-url">Stream URL</label>
+            <input type="text" class="form-control" id="stream-url" placeholder="Enter Stream URL">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <table id="video-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Balltime</td>
+              <td>2022-05-01</td>
+              <td><a href="https://www.youtube.com/watch?v=Qg6BwvDcANg">Watch Now</a></td>
+            </tr>
+            <tr>
+              <td>Live Stream 1</td>
+              <td>2022-04-15</td>
+              <td><a href="https://www.youtube.com/watch?v=Abcde12345">Watch Now</a></td>
+            </tr>
+            <tr>
+              <td>Live Stream 2</td>
+              <td>2022-04-08</td>
+              <td><a href="https://www.youtube.com/watch?v=Abcde12346">Watch Now</a></td>
+            </tr>
+            <tr>
+              <td>Live Stream 3</td>
+              <td>2022-04-01</td>
+              <td><a href="https://www.youtube.com/watch?v=Abcde12347">Watch Now</a></td>
+            </tr>
+          </tbody>
+        </table>
+             
