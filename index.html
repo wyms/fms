@@ -48,23 +48,68 @@
     </div>
   </nav>
 
-  <div class="container">
+
+<div class="container">
     <h1>Beach Volleyball Live Stream Finder Prototype 1.0</h1>
     <hr>
     <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-12">
-        <h2>Live Streams</h2>
-        <div class="video-container">
-          <iframe width="500" height="500"  src="https://app.balltime.com/video/bc45a886-fe82-34bb-bc1d-e845af758d64" frameborder="0" allowfullscreen></iframe>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2>Live Stream 1</h2>
+            <div class="video-container">
+                <iframe width="500" height="500" src="https://app.balltime.com/video/bc45a886-fe82-34bb-bc1d-e845af758d64" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
-      </div>
-      <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-12">
-        <h2>Live Streams</h2>
-        <div class="video-container">
-          <iframe width="500" height="500"  src="https://app.balltime.com/video/ebdb6e7a-e3f1-3f7b-b692-d0c1936a0394" frameborder="0" allowfullscreen></iframe>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2>Live Stream 2</h2>
+            <div class="video-container">
+                <iframe width="500" height="500" src="https://app.balltime.com/video/ebdb6e7a-e3f1-3f7b-b692-d0c1936a0394" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
-      </div>
+    </div>
+</div>
+
+  <div class="container">
+    <h1>Search Results</h1>
+    <hr>
+
+<form action="https://www.google.com/search" method="get">
+  <label for="search-input">Search for Livestream:</label>
+  <input type="text" name="q" id="search-input" placeholder="Enter search terms" />
+  <button type="submit">Search</button>
+
+<table id="video-table" style="width: 100%;">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Balltime</td>
+      <td>2022-05-01</td>
+      <td><a href="https://www.youtube.com/watch?v=Qg6BwvDcANg">Watch Now</a></td>
+    </tr>
+    <tr>
+      <td>Live Stream 1</td>
+      <td>2022-04-15</td>
+      <td><a href="https://www.youtube.com/watch?v=Abcde12345">Watch Now</a></td>
+    </tr>
+    <tr>
+      <td>Live Stream 2</td>
+      <td>2022-04-08</td>
+      <td><a href="https://www.youtube.com/watch?v=Abcde12346">Watch Now</a></td>
+    </tr>
+    <tr>
+      <td>Live Stream 3</td>
+      <td>2022-04-01</td>
+      <td><a href="https://www.youtube.com/watch?v=Abcde12347">Watch Now</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</form>
 
       <div class="col-lg-4 col-md-4 col-sm-12">
         <h2>Add Live Stream</h2>
@@ -79,35 +124,5 @@
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <table id="video-table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Balltime</td>
-              <td>2022-05-01</td>
-              <td><a href="https://www.youtube.com/watch?v=Qg6BwvDcANg">Watch Now</a></td>
-            </tr>
-            <tr>
-              <td>Live Stream 1</td>
-              <td>2022-04-15</td>
-              <td><a href="https://www.youtube.com/watch?v=Abcde12345">Watch Now</a></td>
-            </tr>
-            <tr>
-              <td>Live Stream 2</td>
-              <td>2022-04-08</td>
-              <td><a href="https://www.youtube.com/watch?v=Abcde12346">Watch Now</a></td>
-            </tr>
-            <tr>
-              <td>Live Stream 3</td>
-              <td>2022-04-01</td>
-              <td><a href="https://www.youtube.com/watch?v=Abcde12347">Watch Now</a></td>
-            </tr>
-          </tbody>
-        </table>
+
              
